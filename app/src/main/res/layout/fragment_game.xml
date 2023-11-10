@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/seedIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/seed"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/pigeonIV"
+            app:layout_constraintEnd_toEndOf="@+id/pigeonIV"
+            app:layout_constraintStart_toStartOf="@+id/pigeonIV" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/many_seeds"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/pigeonIV"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:src="@drawable/eating"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seedsTV" />
+
+        <TextView
+            android:id="@+id/seedsTV"
+            android:layout_width="150dp"
+            android:layout_height="0dp"
+            android:background="@color/yellow"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="8dp"
+            android:text="@string/_123"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/seed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/storeBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/world"
+            android:padding="5dp"
+            android:background="@color/yellow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/musicBttn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:background="@color/yellow"
+            android:padding="8dp"
+            android:src="@drawable/note"
+            app:layout_constraintStart_toEndOf="@+id/storeBtn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

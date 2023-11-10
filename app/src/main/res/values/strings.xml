@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Coo-L Clicker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="begin">Begin</string>
+    <string name="rules"><![CDATA[Tap to earn seeds & discover new locations!]]></string>
+    <string name="_123">123</string>
+</resources>
